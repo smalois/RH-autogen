@@ -19,7 +19,8 @@ Note that this is all just a quick hack to get some stamina songs created for
 RH. I'm not likely to support this in the future, and this may not be helpful
 to people that aren't me.
 
-## Building: (Should be portable to any platform, but I've only tried building in Linux (WSL))
+## Building: 
+(Should be portable to any platform, but I've only tried building in Linux (WSL))
 
 ```bash
 gcc autogen.c -o autogen
@@ -28,16 +29,16 @@ gcc autogen.c -o autogen
 ## Usage:
 
 ```bash
-./autogen <number of steps to generate>
+./autogen [number of steps to generate]
 ```
-Don't give weird inputs to <number of steps to generate>. I don't do any checks
+Don't give weird inputs to [number of steps to generate]. I don't do any checks
 for the quality of the input. Any number between 0 and UINT_MAX should work.
 
 By default, output is sent to stdout. I redirect to a file that can be read by
 the AutoHotkey script like so:
 
 ```bash
-./autogen <number of steps to generate> > out.txt
+./autogen [number of steps to generate] > out.txt
 ```
 
 ### Running the AHK script
